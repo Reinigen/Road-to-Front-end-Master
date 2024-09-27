@@ -4,21 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      .header-container {
+      .body {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .nav-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
       }
       .body-container {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
+      }
+      .reviews-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
       }
     </style>
     <title>Raymund Crystal</title>
   </head>
-  <body>
-    <div class="header-container">
+  <body class="body">
+    <div class="nav-container">
       <div id="head"><h1>Raymund Crystal</h1></div>
       <div id="nav">
         <nav>
@@ -26,7 +38,7 @@
             <a href="index.html"> Home / </a>
             <a href=""> Projects / </a>
             <a href=""> Articles / </a>
-            <a href=""> Contacts / </a>
+            <a href=""> Contacts </a>
           </h1>
         </nav>
       </div>
@@ -85,5 +97,26 @@
         </p>
       </div>
     </div>
+
+    <h1>Reviews from my Teachers/Colleagues </h1>
+    <div class="reviews-container">
+      
+      <div>
+        <p>Red was always slaying every project</p>
+        <footer>Alexis Eusebio <br>Project Lead</footer>
+      </div>
+      <div>
+        <p>Red was so cool at everything he programmed</p>
+        <footer>Simon Malaga <br>Fellow Programmer</footer>
+      </div>
+      <div>
+        <p>Red was the coolest and super helpful</p>
+        <footer>Miko Alano <br>BS MIS Coursemate</footer>
+      </div>
+    </div>
+
+    <footer style="display: flex; justify-content: center;">
+      © all rights reserved 2025
+    </footer>
   </body>
 </html>
