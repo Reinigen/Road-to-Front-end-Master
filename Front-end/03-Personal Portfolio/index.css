@@ -1,0 +1,68 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000 */
+
+.nunito-base {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  padding: 1rem, 1rem, 2rem, 2rem;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1rem, solid, black;
+}
+.body-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px, solid, black;
+}
+.reviews-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Index Page Only */
+.projects {
+  width: 33.5%;
+  align-self: center;
+  border: 1px, solid, black;
+}
+.work-experience {
+  width: 33%;
+  align-self: center;
+  border: 1px, solid, black;
+}
+
+.education {
+  width: 33.5%;
+  align-self: center;
+  border: 1px, solid, black;
+}
+
+.reviews {
+  width: 20%;
+  padding: 10%, 20%;
+  border: 0.2rem, solid, black;
+  border-radius: 2rem;
+  align-content: center;
+}
+
+.reviewer {
+  color: lightgray;
+  text-size-adjust: 0.5rem;
+}
+
+/* Contact Page Only */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
