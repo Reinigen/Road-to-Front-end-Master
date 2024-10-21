@@ -31,28 +31,27 @@ body {
 
 /* Index Page Only */
 .projects {
-  width: 33.5%;
-  align-self: center;
-  border: 1px, solid, black;
+  flex: 1;
+  border: 1px solid;
+  padding: 10px 20px;
 }
 .work-experience {
-  width: 33%;
-  align-self: center;
-  border: 1px, solid, black;
+  flex: 1;
+  border: 1px solid;
+  padding: 10px 20px;
 }
 
 .education {
-  width: 33.5%;
-  align-self: center;
-  border: 1px, solid, black;
+  flex: 1;
+  border: 1px solid;
+  padding: 10px 20px;
 }
 
 .reviews {
-  width: 20%;
-  padding: 10%, 20%;
-  border: 0.2rem, solid, black;
-  border-radius: 2rem;
-  align-content: center;
+  width: 25%;
+  padding: 10px, 20px;
+  border: 0.2rem, solid;
+  border-radius: 1.5rem;
 }
 
 .reviewer {
