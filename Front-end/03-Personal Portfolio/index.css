@@ -9,8 +9,15 @@
 }
 
 body {
-  padding: 1rem, 1rem, 2rem, 2rem;
+  padding: 1rem 2rem;
 }
+
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -33,28 +40,37 @@ body {
 .projects {
   flex: 1;
   border: 1px solid;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
 }
+
+.projects ul {
+  list-style: none;
+}
+
+.projects li {
+  margin-bottom: 1rem;
+}
+
 .work-experience {
   flex: 1;
   border: 1px solid;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
 }
 
 .education {
   flex: 1;
   border: 1px solid;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
 }
 
 .reviews {
   width: 25%;
-  padding: 10px, 20px;
+  padding: 0.5rem 1rem;
   border: 0.2rem, solid;
   border-radius: 1.5rem;
 }
 
-.reviewer {
+.reviews footer {
   color: lightgray;
   text-size-adjust: 0.5rem;
 }
