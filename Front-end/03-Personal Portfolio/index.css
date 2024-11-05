@@ -1,11 +1,20 @@
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 1000 */
+:root {
+  --text-color: black;
+  --text-accent-color: gray;
+  --accent-color: lightgray;
+}
 
 .nunito-base {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+}
+
+h1 {
+  text-align: center;
 }
 
 body {
@@ -15,6 +24,19 @@ body {
 body header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+body header h3 {
+  color: var(--text-accent-color);
+}
+
+body footer {
+  text-size-adjust: 0.1rem;
+}
+
+#copyright {
+  display: flex;
   justify-content: center;
 }
 
@@ -65,19 +87,67 @@ body header {
 
 .reviews {
   width: 25%;
-  padding: 0.5rem 1rem;
+  padding: 0.1rem 1rem;
   border: 0.2rem, solid;
   border-radius: 1.5rem;
 }
 
 .reviews footer {
-  color: lightgray;
+  color: var(--text-accent-color);
   text-size-adjust: 0.5rem;
 }
 
 /* Contact Page Only */
-.contact {
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.InputMessage,
+button {
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects h2,
+  .work-experience h2,
+  .reviews h2 {
+    text-align: center;
+    border-bottom: 1px black solid;
+  }
+  .education h2 {
+    text-align: center;
+  }
+  .projects ul {
+    background-color: var(--accent-color);
+    padding: 1%;
+    text-align: center;
+  }
+
+  .work-experience article {
+    background-color: var(--accent-color);
+    padding: 1%;
+  }
+
+  .reviews {
+    width: 75%;
+    margin: 2%;
+  }
 }
