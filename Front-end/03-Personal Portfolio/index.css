@@ -48,48 +48,32 @@ body footer {
 }
 .body-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 1px, solid, black;
+  border: 2px solid #000;
+  margin-top: 20px;
 }
 .reviews-container {
+  margin-top: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  gap: 10px;
 }
 
 /* Index Page Only */
-.projects {
-  flex: 1;
-  border: 1px solid;
-  padding: 0.5rem 1rem;
+.body-container > section {
+  flex: 1; /* Make each section take equal space */
+  padding: 10px;
+  border-right: 2px solid #000;
 }
 
-.projects ul {
-  list-style: none;
-}
-
-.projects li {
-  margin-bottom: 1rem;
-}
-
-.work-experience {
-  flex: 1;
-  border: 1px solid;
-  padding: 0.5rem 1rem;
-}
-
-.education {
-  flex: 1;
-  border: 1px solid;
-  padding: 0.5rem 1rem;
+.body-container > section:last-child {
+  border-left: none;
 }
 
 .reviews {
-  width: 25%;
-  padding: 0.1rem 1rem;
-  border: 0.2rem, solid;
-  border-radius: 1.5rem;
+  flex: 1;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .reviews footer {
@@ -98,16 +82,12 @@ body footer {
 }
 
 /* Contact Page Only */
-form {
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-}
-.InputMessage,
-button {
-  align-items: center;
 }
 
 @media (max-width: 960px) {

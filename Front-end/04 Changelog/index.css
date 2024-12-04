@@ -1,0 +1,90 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000 */
+:root {
+  --text-color: black;
+  --text-accent-color: gray;
+  --accent-color: lightgray;
+}
+
+.nunito-base {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  padding: 1rem 2rem;
+}
+
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body header h3 {
+  color: var(--text-accent-color);
+  align-self: center;
+}
+
+body footer {
+  text-size-adjust: 0.1rem;
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1rem, solid, black;
+}
+.body-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px, solid, black;
+}
+
+/* Changelog Container */
+.changelog-container {
+  margin: 20px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex; /* Flexbox layout for each item */
+  align-items: center;
+  margin-bottom: 20px;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item .date {
+  flex: 0 0 200px; /* Fixed width for the date */
+  text-align: right; /* Align dates to the right */
+  margin-right: 10px;
+  font-weight: bold;
+  color: gray;
+}
+.timeline-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+}
+.timeline-item .title {
+  font-weight: bold;
+}
